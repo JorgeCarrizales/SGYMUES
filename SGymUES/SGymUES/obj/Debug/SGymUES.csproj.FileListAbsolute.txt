@@ -1,0 +1,12 @@
+C:\Users\Jorge\source\repos\SGymUES\SGymUES\bin\Debug\SGymUES.exe.config
+C:\Users\Jorge\source\repos\SGymUES\SGymUES\bin\Debug\SGymUES.exe
+C:\Users\Jorge\source\repos\SGymUES\SGymUES\bin\Debug\SGymUES.pdb
+C:\Users\Jorge\source\repos\SGymUES\SGymUES\obj\Debug\SGymUES.csprojAssemblyReference.cache
+C:\Users\Jorge\source\repos\SGymUES\SGymUES\obj\Debug\SGymUES.Properties.Resources.resources
+C:\Users\Jorge\source\repos\SGymUES\SGymUES\obj\Debug\SGymUES.Form1.resources
+C:\Users\Jorge\source\repos\SGymUES\SGymUES\obj\Debug\SGymUES.csproj.GenerateResource.cache
+C:\Users\Jorge\source\repos\SGymUES\SGymUES\obj\Debug\SGymUES.csproj.CoreCompileInputs.cache
+C:\Users\Jorge\source\repos\SGymUES\SGymUES\obj\Debug\SGymUES.exe
+C:\Users\Jorge\source\repos\SGymUES\SGymUES\obj\Debug\SGymUES.pdb
+C:\Users\Jorge\source\repos\SGymUES\SGymUES\obj\Debug\SGymUES.VISTAS.Clientes.Clientes.resources
+C:\Users\Jorge\source\repos\SGymUES\SGymUES\obj\Debug\SGymUES.VISTAS.Clientes.CRUD_Cliente.resources
