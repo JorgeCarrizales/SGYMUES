@@ -10,3 +10,6 @@ C:\Users\Jorge\source\repos\SGymUES\SGymUES\obj\Debug\SGymUES.exe
 C:\Users\Jorge\source\repos\SGymUES\SGymUES\obj\Debug\SGymUES.pdb
 C:\Users\Jorge\source\repos\SGymUES\SGymUES\obj\Debug\SGymUES.VISTAS.Clientes.Clientes.resources
 C:\Users\Jorge\source\repos\SGymUES\SGymUES\obj\Debug\SGymUES.VISTAS.Clientes.CRUD_Cliente.resources
+C:\Users\Jorge\Documents\Repositorio SGYM\SGYMUES\SGymUES\SGymUES\bin\Debug\SGymUES.exe.config
+C:\Users\Jorge\Documents\Repositorio SGYM\SGYMUES\SGymUES\SGymUES\obj\Debug\SGymUES.exe
+C:\Users\Jorge\Documents\Repositorio SGYM\SGYMUES\SGymUES\SGymUES\obj\Debug\SGymUES.pdb
