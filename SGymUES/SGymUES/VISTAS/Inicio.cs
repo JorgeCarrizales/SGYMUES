@@ -143,6 +143,9 @@ namespace SGymUES
 
         }
 
-       
-    }
+		private void Header_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+	}
 }

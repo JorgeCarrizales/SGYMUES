@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CLASES\Clientes.cs" />
     <Compile Include="VISTAS\Clientes\Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,7 +99,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="CLASES\" />
     <Folder Include="VISTAS\Ajustes\" />
     <Folder Include="VISTAS\Asistencia\" />
     <Folder Include="VISTAS\Mediciones\" />

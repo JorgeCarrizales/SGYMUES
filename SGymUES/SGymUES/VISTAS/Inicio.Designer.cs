@@ -609,6 +609,7 @@
 			this.Header.Name = "Header";
 			this.Header.Size = new System.Drawing.Size(1100, 45);
 			this.Header.TabIndex = 6;
+			this.Header.Paint += new System.Windows.Forms.PaintEventHandler(this.Header_Paint);
 			this.Header.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Header_MouseDown_1);
 			// 
 			// btnMinimizar
