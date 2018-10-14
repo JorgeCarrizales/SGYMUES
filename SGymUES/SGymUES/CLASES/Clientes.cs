@@ -34,7 +34,7 @@ namespace SGymUES.CLASES
 
 		// ------------------------------------Validacion Campos Alumnos-----------------------------------------
 		public bool ValidarCamposAlumons(ErrorProvider Error,TextBox FolioPago,TextBox Nombre,TextBox Edad,TextBox Expediente,TextBox Celular, TextBox Direccion, TextBox Estado, TextBox Municipio
-			, TextBox Email, RadioButton EnfermedadSi, RadioButton EnfermedadNo, RadioButton CertificadoSi, RadioButton CertificadoNo, TextBox Enfermedad, ComboBox Carrera,PictureBox Imagen)
+			, TextBox Email, RadioButton EnfermedadSi, RadioButton EnfermedadNo, RadioButton CertificadoSi, RadioButton CertificadoNo, TextBox Enfermedad, ComboBox Carrera,ComboBox Sexo,PictureBox Imagen)
 		{
 			bool Ok = true;
 			if (String.IsNullOrEmpty(FolioPago.Text))
@@ -168,6 +168,16 @@ namespace SGymUES.CLASES
 				Ok = true;
 				Error.SetError(Carrera, "");
 			}
+			if (Sexo.SelectedIndex == 0)
+			{
+				Ok = false;
+				Error.SetError(Sexo, "Selecciona un sexo");
+			}
+			else
+			{
+				Ok = true;
+				Error.SetError(Sexo, "");
+			}
 			if (Imagen.Image == null)
 			{
 				Ok = false;
@@ -183,7 +193,7 @@ namespace SGymUES.CLASES
 
 		// ------------------------------------Validacion Campos Equipo Representativo-----------------------------------------
 		public bool ValidarCamposER(ErrorProvider Error, TextBox Nombre, TextBox Edad, TextBox Expediente, TextBox Celular, TextBox Direccion, TextBox Estado, TextBox Municipio
-			, TextBox Email, RadioButton EnfermedadSi, RadioButton EnfermedadNo, RadioButton CertificadoSi, RadioButton CertificadoNo, TextBox Enfermedad, ComboBox Carrera, PictureBox Imagen,
+			, TextBox Email, RadioButton EnfermedadSi, RadioButton EnfermedadNo, RadioButton CertificadoSi, RadioButton CertificadoNo, TextBox Enfermedad, ComboBox Carrera,ComboBox Sexo, PictureBox Imagen,
 			ComboBox Deporte, ComboBox Entrenador)
 		{
 			bool Ok = true;
@@ -299,6 +309,16 @@ namespace SGymUES.CLASES
 				Ok = true;
 				Error.SetError(CertificadoSi, "");
 			}
+			if (Sexo.SelectedIndex == 0)
+			{
+				Ok = false;
+				Error.SetError(Sexo, "Selecciona un sexo");
+			}
+			else
+			{
+				Ok = true;
+				Error.SetError(Sexo, "");
+			}
 			if (Carrera.SelectedIndex == 0)
 			{
 				Ok = false;
@@ -344,7 +364,7 @@ namespace SGymUES.CLASES
 
 		// ------------------------------------Validacion Campos Empleados-----------------------------------------
 		public bool ValidarCamposEmpleados(ErrorProvider Error, TextBox Nombre, TextBox Edad, TextBox Empleado, TextBox Celular, TextBox Direccion, TextBox Estado, TextBox Municipio
-					, TextBox Email, RadioButton EnfermedadSi, RadioButton EnfermedadNo, RadioButton CertificadoSi, RadioButton CertificadoNo, TextBox Enfermedad, ComboBox Area, PictureBox Imagen)
+					, TextBox Email, RadioButton EnfermedadSi, RadioButton EnfermedadNo, RadioButton CertificadoSi, RadioButton CertificadoNo, TextBox Enfermedad, ComboBox Area,ComboBox Sexo, PictureBox Imagen)
 		{
 			bool Ok = true;
 			if (String.IsNullOrEmpty(Nombre.Text))
@@ -468,6 +488,16 @@ namespace SGymUES.CLASES
 				Ok = true;
 				Error.SetError(Area, "");
 			}
+			if (Sexo.SelectedIndex == 0)
+			{
+				Ok = false;
+				Error.SetError(Sexo, "Selecciona un sexo");
+			}
+			else
+			{
+				Ok = true;
+				Error.SetError(Sexo, "");
+			}
 			if (Imagen.Image == null)
 			{
 				Ok = false;
@@ -483,7 +513,7 @@ namespace SGymUES.CLASES
 
 		// ------------------------------------LIMPIAR Campos Alumnos-----------------------------------------
 		public void LimpiarCamposAlumons(ErrorProvider Error,TextBox FolioPago, TextBox Nombre, TextBox Edad, TextBox Expediente, TextBox Celular, TextBox Direccion, TextBox Estado, TextBox Municipio
-			, TextBox Email, RadioButton EnfermedadSi, RadioButton EnfermedadNo, RadioButton CertificadoSi, RadioButton CertificadoNo, TextBox Enfermedad, ComboBox Carrera, PictureBox Imagen,PictureBox Add)
+			, TextBox Email, RadioButton EnfermedadSi, RadioButton EnfermedadNo, RadioButton CertificadoSi, RadioButton CertificadoNo, TextBox Enfermedad, ComboBox Carrera,ComboBox Sexo, PictureBox Imagen,PictureBox Add)
 		{
 			Error.Clear();
 			FolioPago.Clear();
@@ -501,13 +531,14 @@ namespace SGymUES.CLASES
 			CertificadoNo.Checked = false;
 			Enfermedad.Clear();
 			Carrera.SelectedIndex = 0;
+			Sexo.SelectedIndex = 0;
 			Imagen.Image = null;
 			Add.Visible = true ;
 		}
 		
 		// ------------------------------------LIMPIAR Campos ER-----------------------------------------
 		public void LimpiarCamposER(ErrorProvider Error, TextBox Nombre, TextBox Edad, TextBox Expediente, TextBox Celular, TextBox Direccion, TextBox Estado, TextBox Municipio
-			, TextBox Email, RadioButton EnfermedadSi, RadioButton EnfermedadNo, RadioButton CertificadoSi, RadioButton CertificadoNo, TextBox Enfermedad, ComboBox Carrera, PictureBox Imagen,
+			, TextBox Email, RadioButton EnfermedadSi, RadioButton EnfermedadNo, RadioButton CertificadoSi, RadioButton CertificadoNo, TextBox Enfermedad, ComboBox Carrera,ComboBox Sexo, PictureBox Imagen,
 			ComboBox Deporte, ComboBox Entrenador, PictureBox Add)
 		{
 			Error.Clear();
@@ -525,6 +556,7 @@ namespace SGymUES.CLASES
 			CertificadoNo.Checked = false;
 			Enfermedad.Clear();
 			Carrera.SelectedIndex = 0;
+			Sexo.SelectedIndex = 0;
 			Imagen.Image = null;
 			Deporte.SelectedIndex = 0;
 			Entrenador.SelectedIndex = 0;
@@ -533,7 +565,7 @@ namespace SGymUES.CLASES
 
 		//------------------------------------------------------Limpiar Campos Empleados --------------------------------------------------------
 		public void LimpiarCamposEmpleados(ErrorProvider Error, TextBox Nombre, TextBox Edad, TextBox Empleado, TextBox Celular, TextBox Direccion, TextBox Estado, TextBox Municipio
-					, TextBox Email, RadioButton EnfermedadSi, RadioButton EnfermedadNo, RadioButton CertificadoSi, RadioButton CertificadoNo, TextBox Enfermedad, ComboBox Area, PictureBox Imagen, PictureBox Add)
+					, TextBox Email, RadioButton EnfermedadSi, RadioButton EnfermedadNo, RadioButton CertificadoSi, RadioButton CertificadoNo, TextBox Enfermedad, ComboBox Area,ComboBox Sexo, PictureBox Imagen, PictureBox Add)
 		{
 			Error.Clear();
 			Nombre.Clear();
@@ -550,6 +582,7 @@ namespace SGymUES.CLASES
 			CertificadoNo.Checked = false;
 			Enfermedad.Clear();
 			Area.SelectedIndex = 0;
+			Sexo.SelectedIndex = 0;
 			Imagen.Image = null;
 			Add.Visible = true;
 		}

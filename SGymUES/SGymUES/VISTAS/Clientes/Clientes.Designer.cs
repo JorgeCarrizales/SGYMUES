@@ -32,6 +32,8 @@
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clientes));
 			this.Body = new System.Windows.Forms.Panel();
 			this.gbEmpleado = new System.Windows.Forms.GroupBox();
+			this.txtNEmpleado = new System.Windows.Forms.TextBox();
+			this.lblNEmpleado = new System.Windows.Forms.Label();
 			this.cmbArea = new System.Windows.Forms.ComboBox();
 			this.lblArea = new System.Windows.Forms.Label();
 			this.AddFotoEM = new System.Windows.Forms.PictureBox();
@@ -141,8 +143,12 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.ErrorAl = new System.Windows.Forms.ErrorProvider(this.components);
 			this.OpenFile = new System.Windows.Forms.OpenFileDialog();
-			this.txtNEmpleado = new System.Windows.Forms.TextBox();
-			this.lblNEmpleado = new System.Windows.Forms.Label();
+			this.cmbSexoER = new System.Windows.Forms.ComboBox();
+			this.label15 = new System.Windows.Forms.Label();
+			this.cmbSexoAl = new System.Windows.Forms.ComboBox();
+			this.label16 = new System.Windows.Forms.Label();
+			this.cmbSexoEM = new System.Windows.Forms.ComboBox();
+			this.label17 = new System.Windows.Forms.Label();
 			this.Body.SuspendLayout();
 			this.gbEmpleado.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.AddFotoEM)).BeginInit();
@@ -188,6 +194,8 @@
 			// gbEmpleado
 			// 
 			this.gbEmpleado.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.gbEmpleado.Controls.Add(this.cmbSexoEM);
+			this.gbEmpleado.Controls.Add(this.label17);
 			this.gbEmpleado.Controls.Add(this.txtNEmpleado);
 			this.gbEmpleado.Controls.Add(this.lblNEmpleado);
 			this.gbEmpleado.Controls.Add(this.cmbArea);
@@ -220,6 +228,23 @@
 			this.gbEmpleado.TabStop = false;
 			this.gbEmpleado.Text = "Añadir Empleado";
 			// 
+			// txtNEmpleado
+			// 
+			this.txtNEmpleado.Location = new System.Drawing.Point(376, 32);
+			this.txtNEmpleado.MaxLength = 15;
+			this.txtNEmpleado.Name = "txtNEmpleado";
+			this.txtNEmpleado.Size = new System.Drawing.Size(144, 27);
+			this.txtNEmpleado.TabIndex = 35;
+			// 
+			// lblNEmpleado
+			// 
+			this.lblNEmpleado.AutoSize = true;
+			this.lblNEmpleado.Location = new System.Drawing.Point(286, 35);
+			this.lblNEmpleado.Name = "lblNEmpleado";
+			this.lblNEmpleado.Size = new System.Drawing.Size(84, 21);
+			this.lblNEmpleado.TabIndex = 36;
+			this.lblNEmpleado.Text = "N° Emple:";
+			// 
 			// cmbArea
 			// 
 			this.cmbArea.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -232,7 +257,7 @@
             "Limpieza",
             "Entrenador",
             "Direccion"});
-			this.cmbArea.Location = new System.Drawing.Point(377, 375);
+			this.cmbArea.Location = new System.Drawing.Point(377, 366);
 			this.cmbArea.Name = "cmbArea";
 			this.cmbArea.Size = new System.Drawing.Size(180, 29);
 			this.cmbArea.TabIndex = 9;
@@ -240,7 +265,7 @@
 			// lblArea
 			// 
 			this.lblArea.AutoSize = true;
-			this.lblArea.Location = new System.Drawing.Point(318, 378);
+			this.lblArea.Location = new System.Drawing.Point(318, 369);
 			this.lblArea.Name = "lblArea";
 			this.lblArea.Size = new System.Drawing.Size(53, 21);
 			this.lblArea.TabIndex = 32;
@@ -348,7 +373,7 @@
 			// 
 			this.gbCertificadoEM.Controls.Add(this.rbMedEMNo);
 			this.gbCertificadoEM.Controls.Add(this.rbMedEMSi);
-			this.gbCertificadoEM.Location = new System.Drawing.Point(14, 317);
+			this.gbCertificadoEM.Location = new System.Drawing.Point(14, 332);
 			this.gbCertificadoEM.Name = "gbCertificadoEM";
 			this.gbCertificadoEM.Size = new System.Drawing.Size(177, 58);
 			this.gbCertificadoEM.TabIndex = 18;
@@ -381,24 +406,24 @@
 			// 
 			// txtEmailEM
 			// 
-			this.txtEmailEM.Location = new System.Drawing.Point(377, 329);
+			this.txtEmailEM.Location = new System.Drawing.Point(377, 323);
 			this.txtEmailEM.Name = "txtEmailEM";
 			this.txtEmailEM.Size = new System.Drawing.Size(412, 27);
 			this.txtEmailEM.TabIndex = 8;
 			// 
 			// txtCelEM
 			// 
-			this.txtCelEM.Location = new System.Drawing.Point(377, 284);
+			this.txtCelEM.Location = new System.Drawing.Point(377, 281);
 			this.txtCelEM.MaxLength = 10;
 			this.txtCelEM.Name = "txtCelEM";
-			this.txtCelEM.Size = new System.Drawing.Size(144, 27);
+			this.txtCelEM.Size = new System.Drawing.Size(180, 27);
 			this.txtCelEM.TabIndex = 7;
 			this.txtCelEM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCelEM_KeyPress);
 			// 
 			// lblEmailEM
 			// 
 			this.lblEmailEM.AutoSize = true;
-			this.lblEmailEM.Location = new System.Drawing.Point(316, 332);
+			this.lblEmailEM.Location = new System.Drawing.Point(316, 326);
 			this.lblEmailEM.Name = "lblEmailEM";
 			this.lblEmailEM.Size = new System.Drawing.Size(55, 21);
 			this.lblEmailEM.TabIndex = 15;
@@ -407,7 +432,7 @@
 			// lblCelEm
 			// 
 			this.lblCelEm.AutoSize = true;
-			this.lblCelEm.Location = new System.Drawing.Point(302, 286);
+			this.lblCelEm.Location = new System.Drawing.Point(302, 283);
 			this.lblCelEm.Name = "lblCelEm";
 			this.lblCelEm.Size = new System.Drawing.Size(69, 21);
 			this.lblCelEm.TabIndex = 13;
@@ -466,7 +491,7 @@
 			// 
 			// txtEdadEM
 			// 
-			this.txtEdadEM.Location = new System.Drawing.Point(377, 111);
+			this.txtEdadEM.Location = new System.Drawing.Point(377, 113);
 			this.txtEdadEM.MaxLength = 2;
 			this.txtEdadEM.Name = "txtEdadEM";
 			this.txtEdadEM.Size = new System.Drawing.Size(67, 27);
@@ -476,7 +501,7 @@
 			// lblEdadEM
 			// 
 			this.lblEdadEM.AutoSize = true;
-			this.lblEdadEM.Location = new System.Drawing.Point(310, 114);
+			this.lblEdadEM.Location = new System.Drawing.Point(310, 116);
 			this.lblEdadEM.Name = "lblEdadEM";
 			this.lblEdadEM.Size = new System.Drawing.Size(60, 21);
 			this.lblEdadEM.TabIndex = 3;
@@ -484,7 +509,7 @@
 			// 
 			// txtNombreEM
 			// 
-			this.txtNombreEM.Location = new System.Drawing.Point(377, 71);
+			this.txtNombreEM.Location = new System.Drawing.Point(377, 73);
 			this.txtNombreEM.Name = "txtNombreEM";
 			this.txtNombreEM.Size = new System.Drawing.Size(412, 27);
 			this.txtNombreEM.TabIndex = 1;
@@ -493,7 +518,7 @@
 			// lblNombreEM
 			// 
 			this.lblNombreEM.AutoSize = true;
-			this.lblNombreEM.Location = new System.Drawing.Point(290, 74);
+			this.lblNombreEM.Location = new System.Drawing.Point(290, 76);
 			this.lblNombreEM.Name = "lblNombreEM";
 			this.lblNombreEM.Size = new System.Drawing.Size(81, 21);
 			this.lblNombreEM.TabIndex = 0;
@@ -502,6 +527,8 @@
 			// gbEquipoR
 			// 
 			this.gbEquipoR.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.gbEquipoR.Controls.Add(this.cmbSexoER);
+			this.gbEquipoR.Controls.Add(this.label15);
 			this.gbEquipoR.Controls.Add(this.cmbEntrenador);
 			this.gbEquipoR.Controls.Add(this.cmbCarreraER);
 			this.gbEquipoR.Controls.Add(this.cmbDeporte);
@@ -549,7 +576,7 @@
             "Juan Perez",
             "Maria Sanchez",
             "Jose Gimenez"});
-			this.cmbEntrenador.Location = new System.Drawing.Point(642, 152);
+			this.cmbEntrenador.Location = new System.Drawing.Point(642, 186);
 			this.cmbEntrenador.Name = "cmbEntrenador";
 			this.cmbEntrenador.Size = new System.Drawing.Size(147, 29);
 			this.cmbEntrenador.TabIndex = 5;
@@ -565,7 +592,7 @@
             "Software",
             "Mecatronica",
             "Nutrición"});
-			this.cmbCarreraER.Location = new System.Drawing.Point(642, 95);
+			this.cmbCarreraER.Location = new System.Drawing.Point(642, 129);
 			this.cmbCarreraER.Name = "cmbCarreraER";
 			this.cmbCarreraER.Size = new System.Drawing.Size(147, 29);
 			this.cmbCarreraER.TabIndex = 4;
@@ -591,7 +618,7 @@
 			// lblEntrenador
 			// 
 			this.lblEntrenador.AutoSize = true;
-			this.lblEntrenador.Location = new System.Drawing.Point(534, 155);
+			this.lblEntrenador.Location = new System.Drawing.Point(534, 189);
 			this.lblEntrenador.Name = "lblEntrenador";
 			this.lblEntrenador.Size = new System.Drawing.Size(102, 21);
 			this.lblEntrenador.TabIndex = 32;
@@ -744,7 +771,7 @@
 			// label6
 			// 
 			this.label6.AutoSize = true;
-			this.label6.Location = new System.Drawing.Point(562, 97);
+			this.label6.Location = new System.Drawing.Point(562, 131);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(74, 21);
 			this.label6.TabIndex = 16;
@@ -874,7 +901,7 @@
 			// 
 			this.txtNombreER.Location = new System.Drawing.Point(377, 26);
 			this.txtNombreER.Name = "txtNombreER";
-			this.txtNombreER.Size = new System.Drawing.Size(372, 27);
+			this.txtNombreER.Size = new System.Drawing.Size(412, 27);
 			this.txtNombreER.TabIndex = 1;
 			this.txtNombreER.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreER_KeyPress);
 			// 
@@ -924,6 +951,8 @@
 			// gbClientes
 			// 
 			this.gbClientes.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.gbClientes.Controls.Add(this.cmbSexoAl);
+			this.gbClientes.Controls.Add(this.label16);
 			this.gbClientes.Controls.Add(this.cmbCarreraAl);
 			this.gbClientes.Controls.Add(this.AddFoto);
 			this.gbClientes.Controls.Add(this.txtFolioPago);
@@ -972,9 +1001,9 @@
             "Entre. Deportivo",
             "Administracion",
             "Criminologia"});
-			this.cmbCarreraAl.Location = new System.Drawing.Point(654, 140);
+			this.cmbCarreraAl.Location = new System.Drawing.Point(626, 179);
 			this.cmbCarreraAl.Name = "cmbCarreraAl";
-			this.cmbCarreraAl.Size = new System.Drawing.Size(121, 29);
+			this.cmbCarreraAl.Size = new System.Drawing.Size(146, 29);
 			this.cmbCarreraAl.TabIndex = 5;
 			// 
 			// AddFoto
@@ -1149,7 +1178,7 @@
 			// lblCarreraAl
 			// 
 			this.lblCarreraAl.AutoSize = true;
-			this.lblCarreraAl.Location = new System.Drawing.Point(578, 144);
+			this.lblCarreraAl.Location = new System.Drawing.Point(557, 183);
 			this.lblCarreraAl.Name = "lblCarreraAl";
 			this.lblCarreraAl.Size = new System.Drawing.Size(74, 21);
 			this.lblCarreraAl.TabIndex = 16;
@@ -1390,22 +1419,75 @@
 			this.ErrorAl.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
 			this.ErrorAl.ContainerControl = this;
 			// 
-			// txtNEmpleado
+			// cmbSexoER
 			// 
-			this.txtNEmpleado.Location = new System.Drawing.Point(376, 30);
-			this.txtNEmpleado.MaxLength = 15;
-			this.txtNEmpleado.Name = "txtNEmpleado";
-			this.txtNEmpleado.Size = new System.Drawing.Size(144, 27);
-			this.txtNEmpleado.TabIndex = 35;
+			this.cmbSexoER.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.cmbSexoER.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cmbSexoER.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cmbSexoER.FormattingEnabled = true;
+			this.cmbSexoER.Items.AddRange(new object[] {
+            "----Selecciona----",
+            "Masculino",
+            "Femenino"});
+			this.cmbSexoER.Location = new System.Drawing.Point(642, 72);
+			this.cmbSexoER.Name = "cmbSexoER";
+			this.cmbSexoER.Size = new System.Drawing.Size(147, 29);
+			this.cmbSexoER.TabIndex = 33;
 			// 
-			// lblNEmpleado
+			// label15
 			// 
-			this.lblNEmpleado.AutoSize = true;
-			this.lblNEmpleado.Location = new System.Drawing.Point(286, 33);
-			this.lblNEmpleado.Name = "lblNEmpleado";
-			this.lblNEmpleado.Size = new System.Drawing.Size(84, 21);
-			this.lblNEmpleado.TabIndex = 36;
-			this.lblNEmpleado.Text = "N° Emple:";
+			this.label15.AutoSize = true;
+			this.label15.Location = new System.Drawing.Point(584, 76);
+			this.label15.Name = "label15";
+			this.label15.Size = new System.Drawing.Size(50, 21);
+			this.label15.TabIndex = 34;
+			this.label15.Text = "Sexo:";
+			// 
+			// cmbSexoAl
+			// 
+			this.cmbSexoAl.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cmbSexoAl.FormattingEnabled = true;
+			this.cmbSexoAl.Items.AddRange(new object[] {
+            "--Seleciona--",
+            "Masculino",
+            "Femenino"});
+			this.cmbSexoAl.Location = new System.Drawing.Point(626, 129);
+			this.cmbSexoAl.Name = "cmbSexoAl";
+			this.cmbSexoAl.Size = new System.Drawing.Size(146, 29);
+			this.cmbSexoAl.TabIndex = 29;
+			// 
+			// label16
+			// 
+			this.label16.AutoSize = true;
+			this.label16.Location = new System.Drawing.Point(577, 133);
+			this.label16.Name = "label16";
+			this.label16.Size = new System.Drawing.Size(50, 21);
+			this.label16.TabIndex = 30;
+			this.label16.Text = "Sexo:";
+			// 
+			// cmbSexoEM
+			// 
+			this.cmbSexoEM.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.cmbSexoEM.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cmbSexoEM.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cmbSexoEM.FormattingEnabled = true;
+			this.cmbSexoEM.Items.AddRange(new object[] {
+            "    ----Selecciona----",
+            "Masculino",
+            "Femenino"});
+			this.cmbSexoEM.Location = new System.Drawing.Point(609, 111);
+			this.cmbSexoEM.Name = "cmbSexoEM";
+			this.cmbSexoEM.Size = new System.Drawing.Size(180, 29);
+			this.cmbSexoEM.TabIndex = 37;
+			// 
+			// label17
+			// 
+			this.label17.AutoSize = true;
+			this.label17.Location = new System.Drawing.Point(550, 114);
+			this.label17.Name = "label17";
+			this.label17.Size = new System.Drawing.Size(50, 21);
+			this.label17.TabIndex = 38;
+			this.label17.Text = "Sexo:";
 			// 
 			// Clientes
 			// 
@@ -1567,5 +1649,11 @@
 		private System.Windows.Forms.OpenFileDialog OpenFile;
 		private System.Windows.Forms.TextBox txtNEmpleado;
 		private System.Windows.Forms.Label lblNEmpleado;
+		private System.Windows.Forms.ComboBox cmbSexoEM;
+		private System.Windows.Forms.Label label17;
+		private System.Windows.Forms.ComboBox cmbSexoER;
+		private System.Windows.Forms.Label label15;
+		private System.Windows.Forms.ComboBox cmbSexoAl;
+		private System.Windows.Forms.Label label16;
 	}
 }

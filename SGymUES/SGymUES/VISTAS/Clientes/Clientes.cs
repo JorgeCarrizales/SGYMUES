@@ -441,7 +441,7 @@ namespace SGymUES.VISTAS.Clientes
 		{
 			if (gbClientes.Visible == true)
 			{
-				ClasesClientes.ValidarCamposAlumons(ErrorAl, txtFolioPago, txtNombreAl, txtEdadAl, txtExpedienteAl, txtCelularAl, txtDireccionAl, txtEstadoAl, txtMunicipioAl, txtEmailAl, rbEnferAlSi, rbEnferAlNo, rbMedicoAlSi, rbMedicoAlNo, txtEnfermedadAl, cmbCarreraAl, pbFotoAl);
+				ClasesClientes.ValidarCamposAlumons(ErrorAl, txtFolioPago, txtNombreAl, txtEdadAl, txtExpedienteAl, txtCelularAl, txtDireccionAl, txtEstadoAl, txtMunicipioAl, txtEmailAl, rbEnferAlSi, rbEnferAlNo, rbMedicoAlSi, rbMedicoAlNo, txtEnfermedadAl, cmbCarreraAl, cmbSexoAl,pbFotoAl);
 				if (ClasesClientes.ValidarEmail(txtEmailAl.Text) == true)
 				{
 					rbEnferAlNo.Checked = false;
@@ -457,7 +457,7 @@ namespace SGymUES.VISTAS.Clientes
 			}
 			else if (gbEmpleado.Visible == true)
 			{
-				ClasesClientes.ValidarCamposEmpleados(ErrorAl, txtNombreEM, txtEdadEM, txtNEmpleado, txtCelEM, txtDireccionEM, txtEstadoEM, txtMunicipioEM, txtEmailEM, rbEnferEMSi, rbEnferEMNo, rbMedEMSi, rbMedEMNo, txtEnfermedadEM, cmbArea, pbFotoEM);
+				ClasesClientes.ValidarCamposEmpleados(ErrorAl, txtNombreEM, txtEdadEM, txtNEmpleado, txtCelEM, txtDireccionEM, txtEstadoEM, txtMunicipioEM, txtEmailEM, rbEnferEMSi, rbEnferEMNo, rbMedEMSi, rbMedEMNo, txtEnfermedadEM, cmbArea, cmbSexoEM,pbFotoEM);
 				if (ClasesClientes.ValidarEmail(txtEmailEM.Text) == true)
 				{
 					rbEnferEMNo.Checked = false;
@@ -473,7 +473,7 @@ namespace SGymUES.VISTAS.Clientes
 			}
 			else if (gbEquipoR.Visible == true)
 			{
-				ClasesClientes.ValidarCamposER(ErrorAl, txtNombreER, txtEdadER, txtExpedienteER, txtCelER, txtDireccionER, txtEstadoER, txtMunicipioER, txtEmailER, rbEnferERSi, rbEnferERNo, rbMedERSi, rbMedERNo, txtEnfermedadER, cmbCarreraER, pbER, cmbDeporte, cmbEntrenador);
+				ClasesClientes.ValidarCamposER(ErrorAl, txtNombreER, txtEdadER, txtExpedienteER, txtCelER, txtDireccionER, txtEstadoER, txtMunicipioER, txtEmailER, rbEnferERSi, rbEnferERNo, rbMedERSi, rbMedERNo, txtEnfermedadER, cmbCarreraER, cmbSexoER, pbER, cmbDeporte, cmbEntrenador);
 				if (ClasesClientes.ValidarEmail(txtEmailER.Text) == true)
 				{
 					rbEnferERNo.Checked = false;
@@ -654,17 +654,17 @@ namespace SGymUES.VISTAS.Clientes
 			if (gbClientes.Visible == true)
 			{
 				ClasesClientes.LimpiarCamposAlumons(ErrorAl, txtFolioPago, txtNombreAl, txtEdadAl, txtExpedienteAl, txtCelularAl, txtDireccionAl, txtEstadoAl, txtMunicipioAl, txtEmailAl,
-					rbEnferAlSi, rbEnferAlNo, rbMedicoAlSi, rbMedicoAlNo, txtEnfermedadAl, cmbCarreraAl, pbFotoAl, AddFoto);
+					rbEnferAlSi, rbEnferAlNo, rbMedicoAlSi, rbMedicoAlNo, txtEnfermedadAl, cmbCarreraAl,cmbSexoAl, pbFotoAl, AddFoto);
 			}
 			else if (gbEmpleado.Visible == true)
 			{
 				ClasesClientes.LimpiarCamposEmpleados(ErrorAl,txtNombreEM,txtEdadEM,txtNEmpleado,txtCelEM,txtDireccionEM,txtEstadoEM,txtMunicipioEM,txtEmailEM,rbEnferEMSi,rbEnferEMNo,
-					rbMedEMSi,rbMedEMNo,txtEnfermedadEM,cmbArea,pbFotoEM,AddFotoEM);
+					rbMedEMSi,rbMedEMNo,txtEnfermedadEM,cmbArea,cmbSexoEM,pbFotoEM,AddFotoEM);
 			}
 			else if (gbEquipoR.Visible == true)
 			{
 				ClasesClientes.LimpiarCamposER(ErrorAl, txtNombreER, txtEdadER, txtExpedienteER, txtCelER,txtDireccionER,txtEstadoER,txtMunicipioER,txtEmailER,rbEnferERSi,rbEnferERNo,
-					rbMedERSi,rbMedERNo,txtEnfermedadER,cmbCarreraER,pbER,cmbDeporte,cmbEntrenador,AddFotoER);
+					rbMedERSi,rbMedERNo,txtEnfermedadER,cmbCarreraER,cmbSexoER,pbER,cmbDeporte,cmbEntrenador,AddFotoER);
 
 			}
 		}
